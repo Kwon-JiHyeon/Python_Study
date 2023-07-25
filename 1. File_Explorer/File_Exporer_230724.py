@@ -3,7 +3,7 @@ from pathlib import Path
 def find_index_lines(folder_path):
     index_files = {}
     folder_path = Path(folder_path)  # folder_path 하위 폴더를 다 가져오기위해 import Path 사용
-    for file_path in folder_path.glob('**/*.py'):  # glob 함수를 사용하여 폴더 내에서 *.py확장자를 사용하는 파일 검색
+    for file_path in folder_path.glob('**/*.py'):  # glob 함수를 사용하여 폴더 내에서 *.py확장자를 사용하는 파일만 검색
         if file_path.is_file():  # file_path가 실제 파일이면 True
             with open(file_path, 'r', encoding='utf-8') as f:
                 lines_with_index = [line.strip() for line in f if
