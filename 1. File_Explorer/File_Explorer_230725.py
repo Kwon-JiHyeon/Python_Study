@@ -13,7 +13,6 @@ def FileCollection(L_name, file_types):
 def GetFileSentence(file_list, search_sentences, s_path):
     file_dict = {}
     for filename in file_list:
-        #print(filename)
         sentence_list = []
         with open(filename, 'r', errors='ignore') as f:
             lines = f.readlines()
