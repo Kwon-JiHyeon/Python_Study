@@ -33,5 +33,6 @@ for item in tmp.find_all('p'):
 
 df = pd.DataFrame({'food': food_list, 'restaurant': restaurant_list, 'price': money_list, 'address': address_list})
 
+
 # 테스트
 df
