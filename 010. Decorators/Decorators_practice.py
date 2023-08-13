@@ -1,4 +1,4 @@
-# 데코레이터 연습 1
+# 데코레이터 연습1
 
 def wrapper(func):
     def wrapped_func(*args):
