@@ -4,6 +4,7 @@ class DataProcessor:
     def __init__(self, data):
         self.data = data
 
+    # 데이터 프레임 전체 행 데이터 중에서 중복값 찾기
     def find_duplicate_rows(self):
         print("Original DataFrame:")
         print(self.data)
@@ -14,6 +15,7 @@ class DataProcessor:
         print(duplicate_rows)
         print("\n")
 
+    # 데이터프레임의 특정 열 데이터에서 중복값 찾기
     def find_duplicate_column(self, column_name):
         column_duplicate = self.data[column_name].duplicated()
         print(f"Duplicate values in column '{column_name}':")
