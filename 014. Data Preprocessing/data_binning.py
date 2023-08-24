@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+\
 class HorsepowerBinning:
     def __init__(self, file_path):
         # 데이터 불러오기 및 열 이름 설정
